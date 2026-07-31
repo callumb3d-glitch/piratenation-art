@@ -1,3 +1,6 @@
+# Art assets are stored in Git LFS.
+# These are large generated/exported files that are never diffed or merged,
+# so -text disables EOL normalization for the text-based formats (svg, gltf).
 *.png filter=lfs diff=lfs merge=lfs -text
 *.svg filter=lfs diff=lfs merge=lfs -text
 *.gltf filter=lfs diff=lfs merge=lfs -text
