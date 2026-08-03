@@ -1,0 +1,7 @@
+newmtl statue_extra_male_001:PN_Material
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd PN-statue_pirate_Palette_gold.png
+Ni 1.45

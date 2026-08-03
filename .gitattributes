@@ -1,8 +1,41 @@
 # Art assets are stored in Git LFS.
 # These are large generated/exported files that are never diffed or merged,
 # so -text disables EOL normalization for the text-based formats (svg, gltf).
+
+# Images
 *.png filter=lfs diff=lfs merge=lfs -text
 *.svg filter=lfs diff=lfs merge=lfs -text
-*.gltf filter=lfs diff=lfs merge=lfs -text
-*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.exr filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
 *.ai filter=lfs diff=lfs merge=lfs -text
+
+# Video
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.webm filter=lfs diff=lfs merge=lfs -text
+*.mkv filter=lfs diff=lfs merge=lfs -text
+
+# 3D / voxel source and exports
+*.gltf filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.ma filter=lfs diff=lfs merge=lfs -text
+*.mb filter=lfs diff=lfs merge=lfs -text
+*.swatch filter=lfs diff=lfs merge=lfs -text
+*.swatches filter=lfs diff=lfs merge=lfs -text
+*.vox filter=lfs diff=lfs merge=lfs -text
+*.vxm filter=lfs diff=lfs merge=lfs -text
+*.vxa filter=lfs diff=lfs merge=lfs -text
+*.vxr filter=lfs diff=lfs merge=lfs -text
+
+# Archives
+*.zip filter=lfs diff=lfs merge=lfs -text
+
+# Duplicate-suffixed exports that no *.ext glob would catch.
+"*.gltf 2" filter=lfs diff=lfs merge=lfs -text
+"*.gltf copy" filter=lfs diff=lfs merge=lfs -text
+
+# Deliberately NOT in LFS — small text worth diffing in plain Git:
+# .obj .mtl .json .bbmodel .prefab .meta .txt .csv .html
+# Blender backups (.blend1 .backup .blend@ .bphys) are gitignored, not tracked.

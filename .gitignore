@@ -1,1 +1,10 @@
 .DS_Store
+
+# Editor-generated backups and caches sitting alongside the real sources:
+# Blender previous-version saves and temp files, VoxEdit *.vxm.backup, and
+# Blender physics caches. All regenerable, so the sources are tracked and
+# these are not.
+*.blend1
+*.blend@
+*.backup
+*.bphys
