@@ -1,5 +1,0 @@
-"palmTree03" at:
-World/palmTree03
-World/palmTree03/palmTree03
-
-
